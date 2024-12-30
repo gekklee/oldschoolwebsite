@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GekkLee's New and Improved Webpage - Contact</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+
+    <div class="container">
+        <img src="/img/underconstruction.webp" alt="Under Construction">
+    </div>
+
+    <footer>
+        <img src="/img/boarder_barbwire1.gif">
+        <p>© 2024 GekkLee - All Rights Reserved.</p>
+        <img src="/img/boarder_barbwire1.gif">
+    </footer>
+
+    <!-- script to generate stars in the background -->
+    <script>
+        const starsContainer = document.querySelector('.stars');
+        const numStars = 150;
+    
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            if (Math.random() > 0.5) {
+                star.classList.add('star-moving'); // Add movement effect to some stars
+            }
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.width = `${Math.random() * 3 + 3}px`; // Random size between 3px and 6px
+            star.style.height = star.style.width;
+            star.style.animationDelay = `${Math.random() * 2}s`; // Random blink start
+            starsContainer.appendChild(star);
+        }
+    </script>     
+</body>
+</html>

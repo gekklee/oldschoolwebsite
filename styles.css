@@ -1,0 +1,132 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    color: lime;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full-screen height */
+}
+
+h1 {
+    color: magenta;
+    font-size: 3rem;
+    text-shadow: 2px 2px yellow;
+    margin: 20px 0;
+}
+
+.blink {
+    animation: blink-text 1s steps(2, start) infinite;
+    color: red;
+}
+
+@keyframes blink-text {
+    50% {
+        opacity: 0;
+    }
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons button {
+    background: linear-gradient(to bottom, yellow, orange);
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px black;
+}
+
+.buttons button:hover {
+    background: linear-gradient(to bottom, orange, yellow);
+}
+
+.gif-images img {
+    width: 100px;
+    margin: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* Ensures the footer is pushed to the bottom when content is short */
+}
+
+/* Galaxy Background */
+.stars {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    animation: star-blink-laggy 2s steps(2, start) infinite;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+/* Animation for laggy blinking */
+@keyframes star-blink-laggy {
+    0%, 100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Additional star colors */
+.star:nth-child(3n) {
+    background-color: #a0d8f0; /* Soft blue */
+}
+
+.star:nth-child(5n) {
+    background-color: #ffdd99; /* Warm yellow */
+}
+
+.star:nth-child(7n) {
+    background-color: #ffa3ff; /* Light purple */
+}
+
+/* Laggy movement effect */
+.star-moving {
+    animation: star-move-laggy 10s steps(20, start) infinite;
+}
+
+@keyframes star-move-laggy {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(5px, 5px);
+    }
+}
