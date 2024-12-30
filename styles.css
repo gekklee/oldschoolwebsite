@@ -10,7 +10,17 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensures full-screen height */
+    cursor: url("img/cursors/normal\ cursor.gif") , auto;
 }
+
+.button, .link {
+    cursor: url('img/cursors/link\ cursor.gif'), pointer;
+}
+
+.text-field {
+    cursor: url('img/cursors/text\ cursor.gif'), text;
+}
+
 
 h1 {
     color: magenta;
