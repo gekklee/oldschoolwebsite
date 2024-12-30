@@ -14,11 +14,11 @@ body {
 }
 
 .button, .link {
-    cursor: url('img/cursors/link\ cursor.gif'), pointer;
+    cursor: url("img/cursors/link\ cursor.gif"), pointer;
 }
 
 .text-field {
-    cursor: url('img/cursors/text\ cursor.gif'), text;
+    cursor: url("img/cursors/text\ cursor.gif"), text;
 }
 
 
