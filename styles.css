@@ -65,12 +65,16 @@ a:hover {
 
 .centered-title {
     text-align: center;
-    margin: auto;  
-    width: 100%; 
-    color: magenta; 
-    font-size: 2.5rem;  
-    text-shadow: 2px 2px yellow; 
+    margin: auto; 
+    width: 80%; 
+    color: cyan; 
+    font-size: 2rem; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold; 
+    text-shadow: 1px 1px magenta; 
     margin-bottom: 20px; 
+    border-bottom: 2px solid lime;
+    padding-bottom: 10px; 
 }
 
 .centered-paragraph {
