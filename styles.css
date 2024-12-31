@@ -73,17 +73,20 @@ a:hover {
     font-weight: bold; 
     text-shadow: 1px 1px magenta; 
     margin-bottom: 20px; 
-    border-bottom: 2px solid lime;
     padding-bottom: 10px; 
 }
 
 .centered-paragraph {
     text-align: center;
-    margin: auto; 
-    width: 60%;
-    color: lime; 
-    font-size: 1.2rem; 
+    margin: auto;
+    max-width: 600px; 
+    color: lime;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    padding: 0 10px;
 }
+
 
 
 footer {
